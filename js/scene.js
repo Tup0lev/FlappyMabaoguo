@@ -52,7 +52,7 @@ var playButton, restartButton, feedbackButton, playBgmButton, otherGames;
 
 function setLoadingText(percent) {
   loadingText.setText(
-    'Loading...\n\n独轮车的行程: %s % \n作者：AcFun/Pilipili 图波列夫的设计图'.replace('%s', percent)
+    'Loading...\n\n比武准备中: %s % \n作者：\nAcFun/Pilipili 图波列夫的设计图'.replace('%s', percent)
   );
 }
 
@@ -60,7 +60,7 @@ function createLoadingScreen() {
   tipsText = global.phaserGame.add.text(
     global.phaserGame.width / 2,
     global.phaserGame.height / 4,
-    '请打开声音',
+    '请打开声音并关闭adblock',
     {
       font: '16px ' + global.font,
       fill: '#fff',
